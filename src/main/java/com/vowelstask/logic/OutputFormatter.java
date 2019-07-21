@@ -5,9 +5,7 @@ import java.math.RoundingMode;
 import java.util.Map;
 
 import static com.sun.org.apache.xml.internal.utils.LocaleUtility.EMPTY_STRING;
-import static com.vowelstask.io.PropertiesLoader.AVERAGE_PRECISION;
-import static com.vowelstask.io.PropertiesLoader.AVERAGE_ROUNDING_MODE;
-import static com.vowelstask.io.PropertiesLoader.getProperty;
+import static com.vowelstask.io.PropertiesLoader.*;
 
 public class OutputFormatter
 {

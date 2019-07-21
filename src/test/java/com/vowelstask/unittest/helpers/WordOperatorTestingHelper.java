@@ -1,10 +1,10 @@
 package com.vowelstask.unittest.helpers;
 
+import com.vowelstask.logic.WordOperator;
+
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import com.vowelstask.logic.WordOperator;
 
 public class WordOperatorTestingHelper
 {

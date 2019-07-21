@@ -1,20 +1,16 @@
 package com.vowelstask.unittest.logic;
 
-import java.io.IOException;
-import java.io.StringReader;
-
-import static java.util.Arrays.asList;
-import static java.util.Collections.emptyList;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static com.vowelstask.io.PropertiesLoader.DEFAULT_VOWELS;
-import static com.vowelstask.io.PropertiesLoader.PROPERTIES;
-import static com.vowelstask.io.PropertiesLoader.VOWELS;
-import static com.vowelstask.io.PropertiesLoader.loadProperties;
+import java.io.IOException;
+import java.io.StringReader;
+
+import static com.vowelstask.io.PropertiesLoader.*;
 import static com.vowelstask.unittest.helpers.CalculatorAndFormatterTestingHelper.runCalculateAverageTest;
+import static java.util.Arrays.asList;
+import static java.util.Collections.emptyList;
 
 class AverageCalculatorTest
 {

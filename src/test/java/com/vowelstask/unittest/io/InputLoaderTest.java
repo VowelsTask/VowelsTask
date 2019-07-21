@@ -1,19 +1,15 @@
 package com.vowelstask.unittest.io;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.List;
 import java.util.Scanner;
 
+import static com.vowelstask.TestStringProvider.*;
+import static com.vowelstask.io.InputLoader.loadWordsFromInput;
 import static java.util.Arrays.asList;
 import static java.util.Collections.emptyList;
-
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import static com.vowelstask.TestStringProvider.EMPTY_STRING;
-import static com.vowelstask.TestStringProvider.ONLY_WHITESPACES_STRING;
-import static com.vowelstask.TestStringProvider.WORDS_PUNCTUATION_WHITESPACES_STRING;
-import static com.vowelstask.io.InputLoader.loadWordsFromInput;
 
 class InputLoaderTest {
 

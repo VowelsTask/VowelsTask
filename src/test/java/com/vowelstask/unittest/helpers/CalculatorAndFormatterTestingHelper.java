@@ -1,19 +1,17 @@
 package com.vowelstask.unittest.helpers;
 
+import com.vowelstask.logic.AverageCalculator;
+
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import static com.vowelstask.logic.OutputFormatter.convertMapToString;
 import static java.lang.Double.valueOf;
 import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.toList;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import com.vowelstask.logic.AverageCalculator;
-
-import static com.vowelstask.logic.OutputFormatter.convertMapToString;
 
 public class CalculatorAndFormatterTestingHelper
 {

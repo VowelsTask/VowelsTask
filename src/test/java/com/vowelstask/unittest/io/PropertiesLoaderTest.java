@@ -1,35 +1,15 @@
 package com.vowelstask.unittest.io;
 
-import java.io.IOException;
-import java.io.StringReader;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.io.IOException;
+import java.io.StringReader;
 
-import static com.vowelstask.TestStringProvider.ALL_PROPERTIES;
-import static com.vowelstask.TestStringProvider.DUMMY_PROPERTY;
-import static com.vowelstask.TestStringProvider.DUMMY_VALUE;
-import static com.vowelstask.TestStringProvider.EMPTY_STRING;
-import static com.vowelstask.TestStringProvider.NOT_YET_IMPLEMENTED_MESSAGE;
-import static com.vowelstask.TestStringProvider.PROPERTIES_SUBSET;
-import static com.vowelstask.io.PropertiesLoader.AVERAGE_PRECISION;
-import static com.vowelstask.io.PropertiesLoader.AVERAGE_ROUNDING_MODE;
-import static com.vowelstask.io.PropertiesLoader.DEFAULT_AVERAGE_PRECISION;
-import static com.vowelstask.io.PropertiesLoader.DEFAULT_AVERAGE_ROUNDING_MODE;
-import static com.vowelstask.io.PropertiesLoader.DEFAULT_INPUT_FILE_NAME;
-import static com.vowelstask.io.PropertiesLoader.DEFAULT_OUTPUT_FILE_NAME;
-import static com.vowelstask.io.PropertiesLoader.DEFAULT_PUNCTUATION_CHARACTERS;
-import static com.vowelstask.io.PropertiesLoader.DEFAULT_VOWELS;
-import static com.vowelstask.io.PropertiesLoader.INPUT_FILE_NAME;
-import static com.vowelstask.io.PropertiesLoader.OUTPUT_FILE_NAME;
-import static com.vowelstask.io.PropertiesLoader.PROPERTIES;
-import static com.vowelstask.io.PropertiesLoader.PUNCTUATION_CHARACTERS;
-import static com.vowelstask.io.PropertiesLoader.VOWELS;
-import static com.vowelstask.io.PropertiesLoader.getProperty;
-import static com.vowelstask.io.PropertiesLoader.loadProperties;
+import static com.vowelstask.TestStringProvider.*;
+import static com.vowelstask.io.PropertiesLoader.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PropertiesLoaderTest
 {

@@ -1,32 +1,21 @@
 package com.vowelstask;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.Reader;
+import com.vowelstask.logic.AverageCalculator;
+import com.vowelstask.logic.WordOperator;
+import org.apache.logging.log4j.core.Logger;
+import org.apache.logging.log4j.core.LoggerContext;
+
+import java.io.*;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Scanner;
 
-import static java.io.File.separator;
-import static java.nio.file.Paths.get;
-
-import org.apache.logging.log4j.Logger;
-
-import static org.apache.logging.log4j.LogManager.getLogger;
-
-import com.vowelstask.logic.AverageCalculator;
-import com.vowelstask.logic.WordOperator;
-
 import static com.vowelstask.io.InputLoader.loadWordsFromInput;
 import static com.vowelstask.io.OutputWriter.writeContentToOutput;
-import static com.vowelstask.io.PropertiesLoader.INPUT_FILE_NAME;
-import static com.vowelstask.io.PropertiesLoader.OUTPUT_FILE_NAME;
-import static com.vowelstask.io.PropertiesLoader.getProperty;
-import static com.vowelstask.io.PropertiesLoader.loadProperties;
+import static com.vowelstask.io.PropertiesLoader.*;
 import static com.vowelstask.logic.OutputFormatter.convertMapToString;
+import static java.io.File.separator;
+import static java.nio.file.Paths.get;
 
 public class Application
 {
@@ -39,7 +28,9 @@ public class Application
 
     public static void main(String[] args) throws IOException
     {
-        runApp(MAIN_RESOURCES_PATH + PROPERTIES_FILE_NAME, getLogger(Application.class));
+        String name = Application.class.getSimpleName();
+        LoggerContext loggerContext = new LoggerContext(name);
+        runApp(MAIN_RESOURCES_PATH + PROPERTIES_FILE_NAME, loggerContext.getLogger(name));
     }
 
     public static void runApp(String propertiesPathAndFileName, Logger logger) throws IOException {

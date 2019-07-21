@@ -1,12 +1,6 @@
 package com.vowelstask.endtoendtest;
 
-import java.io.IOException;
-import java.nio.file.Path;
-
-import static java.nio.file.Files.deleteIfExists;
-import static java.nio.file.Files.readAllBytes;
-import static java.nio.file.Paths.get;
-
+import com.vowelstask.Application;
 import org.apache.logging.log4j.core.Logger;
 import org.apache.logging.log4j.core.LoggerContext;
 import org.junit.jupiter.api.AfterAll;
@@ -14,15 +8,16 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import com.vowelstask.Application;
+import java.io.IOException;
+import java.nio.file.Path;
 
 import static com.vowelstask.Application.MAIN_RESOURCES_PATH;
-import static com.vowelstask.TestStringProvider.DUMMY_VALUE;
-import static com.vowelstask.TestStringProvider.EXPECTED_OUTPUT_DEFAULT_PROPERTIES;
-import static com.vowelstask.TestStringProvider.EXPECTED_OUTPUT_FILE_PROPERTIES;
+import static com.vowelstask.TestStringProvider.*;
 import static com.vowelstask.io.PropertiesLoader.DEFAULT_OUTPUT_FILE_NAME;
+import static java.nio.file.Files.deleteIfExists;
+import static java.nio.file.Files.readAllBytes;
+import static java.nio.file.Paths.get;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ApplicationTest
 {

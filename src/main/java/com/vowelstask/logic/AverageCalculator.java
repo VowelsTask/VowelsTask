@@ -5,13 +5,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
-import static java.util.Comparator.comparing;
-import static java.util.stream.Collectors.averagingLong;
-import static java.util.stream.Collectors.groupingBy;
-import static java.util.stream.Collectors.toList;
-
 import static com.vowelstask.io.PropertiesLoader.VOWELS;
 import static com.vowelstask.io.PropertiesLoader.getProperty;
+import static java.util.Comparator.comparing;
+import static java.util.stream.Collectors.*;
 
 public class AverageCalculator {
 

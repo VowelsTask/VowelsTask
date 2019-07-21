@@ -1,13 +1,12 @@
 package com.vowelstask.unittest.logic.wordoperator;
 
-import java.util.List;
-
-import static java.util.Arrays.asList;
-import static java.util.Collections.emptyList;
-
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static com.vowelstask.unittest.helpers.WordOperatorTestingHelper.runRemoveDuplicatesTest;
+import static java.util.Arrays.asList;
+import static java.util.Collections.emptyList;
 
 class RemoveDuplicatesTest
 {

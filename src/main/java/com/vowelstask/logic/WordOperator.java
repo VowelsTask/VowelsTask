@@ -2,11 +2,10 @@ package com.vowelstask.logic;
 
 import java.util.List;
 
-import static java.util.stream.Collectors.toList;
-
 import static com.sun.org.apache.xml.internal.utils.LocaleUtility.EMPTY_STRING;
 import static com.vowelstask.io.PropertiesLoader.PUNCTUATION_CHARACTERS;
 import static com.vowelstask.io.PropertiesLoader.getProperty;
+import static java.util.stream.Collectors.toList;
 
 public class WordOperator
 {

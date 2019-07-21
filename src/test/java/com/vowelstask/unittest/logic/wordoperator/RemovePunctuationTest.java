@@ -1,22 +1,18 @@
 package com.vowelstask.unittest.logic.wordoperator;
 
-import java.io.IOException;
-import java.io.StringReader;
-import java.util.List;
-
-import static java.util.Arrays.asList;
-import static java.util.Collections.emptyList;
-import static java.util.Collections.singletonList;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static com.vowelstask.io.PropertiesLoader.DEFAULT_PUNCTUATION_CHARACTERS;
-import static com.vowelstask.io.PropertiesLoader.PROPERTIES;
-import static com.vowelstask.io.PropertiesLoader.PUNCTUATION_CHARACTERS;
-import static com.vowelstask.io.PropertiesLoader.loadProperties;
+import java.io.IOException;
+import java.io.StringReader;
+import java.util.List;
+
+import static com.vowelstask.io.PropertiesLoader.*;
 import static com.vowelstask.unittest.helpers.WordOperatorTestingHelper.runRemovePunctuationTest;
+import static java.util.Arrays.asList;
+import static java.util.Collections.emptyList;
+import static java.util.Collections.singletonList;
 
 class RemovePunctuationTest
 {

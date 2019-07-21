@@ -1,11 +1,5 @@
 package com.vowelstask.endtoendtest;
 
-import java.io.IOException;
-import java.util.List;
-
-import static java.io.File.separator;
-import static java.nio.file.Files.deleteIfExists;
-
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.core.LogEvent;
 import org.apache.logging.log4j.core.Logger;
@@ -15,20 +9,16 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.io.IOException;
+import java.util.List;
 
-import static com.vowelstask.Application.CANNOT_OPEN;
-import static com.vowelstask.Application.CANNOT_SAVE;
-import static com.vowelstask.Application.DEFAULT_PROPERTIES;
-import static com.vowelstask.Application.MAIN_RESOURCES_PATH;
-import static com.vowelstask.Application.PROBLEM_READING;
-import static com.vowelstask.Application.PROPERTIES_FILE_NAME;
-import static com.vowelstask.Application.runApp;
+import static com.vowelstask.Application.*;
 import static com.vowelstask.TestStringProvider.DUMMY_VALUE;
 import static com.vowelstask.endtoendtest.ApplicationTest.OUTPUT_FILE_PATH;
-import static com.vowelstask.io.PropertiesLoader.INPUT_FILE_NAME;
-import static com.vowelstask.io.PropertiesLoader.OUTPUT_FILE_NAME;
-import static com.vowelstask.io.PropertiesLoader.getProperty;
+import static com.vowelstask.io.PropertiesLoader.*;
+import static java.io.File.separator;
+import static java.nio.file.Files.deleteIfExists;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class LoggingTest
 {

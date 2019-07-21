@@ -1,22 +1,16 @@
 package com.vowelstask.unittest.logic;
 
-import java.io.IOException;
-import java.io.StringReader;
-
-import static java.lang.System.lineSeparator;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+import java.io.StringReader;
+
 import static com.vowelstask.TestStringProvider.EMPTY_STRING;
-import static com.vowelstask.io.PropertiesLoader.AVERAGE_PRECISION;
-import static com.vowelstask.io.PropertiesLoader.AVERAGE_ROUNDING_MODE;
-import static com.vowelstask.io.PropertiesLoader.DEFAULT_AVERAGE_PRECISION;
-import static com.vowelstask.io.PropertiesLoader.DEFAULT_AVERAGE_ROUNDING_MODE;
-import static com.vowelstask.io.PropertiesLoader.PROPERTIES;
-import static com.vowelstask.io.PropertiesLoader.loadProperties;
+import static com.vowelstask.io.PropertiesLoader.*;
 import static com.vowelstask.unittest.helpers.CalculatorAndFormatterTestingHelper.runOutputFormatterTest;
+import static java.lang.System.lineSeparator;
 
 class OutputFormatterTest
 {
